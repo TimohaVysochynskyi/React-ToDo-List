@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: #efefef;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(37deg, rgba(2, 0, 36, 1) 0%, rgba(1, 78, 117, 1) 45%, rgba(0, 212, 255, 1) 100%);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 60vh;
+  max-height: 60vh;
+  min-width: 35vw;
+  border: 2px solid #fefefe;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+}
+
+.form-control {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  margin: 12px 4px;
+  font-size: 17px;
+  color: #252525;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.form-control:first-child {
+  width: 100%;
+}
+
+.form-control:last-child {
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.todo-item {
+  width: 98%;
+  margin: 8px;
+  padding: 8px 12px;
+  border: 1.5px solid #efefef;
+  border-radius: 6px;
+  font-size: 17px;
+  list-style: none;
+}
+
+.todo-item__row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-item__row:last-child {
+  justify-content: end;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.form-btn {
+  color: #252525;
+  font-size: 30px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 16px;
+}
